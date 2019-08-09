@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		8E278CA922FD024600B8B3E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E278CA822FD024600B8B3E5 /* AppDelegate.swift */; };
-		8E278CAB22FD024600B8B3E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E278CAA22FD024600B8B3E5 /* ViewController.swift */; };
+		8E278CAB22FD024600B8B3E5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E278CAA22FD024600B8B3E5 /* MainViewController.swift */; };
 		8E278CAE22FD024600B8B3E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E278CAC22FD024600B8B3E5 /* Main.storyboard */; };
 		8E278CB022FD024800B8B3E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E278CAF22FD024800B8B3E5 /* Assets.xcassets */; };
 		8E278CB322FD024800B8B3E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E278CB122FD024800B8B3E5 /* LaunchScreen.storyboard */; };
+		8E278CC022FD066400B8B3E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E278CBF22FD066400B8B3E5 /* LoginViewController.swift */; };
+		8E278CC322FD0D4B00B8B3E5 /* LocalAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E278CC222FD0D4B00B8B3E5 /* LocalAuthentication.swift */; };
+		8E278CC522FD11D200B8B3E5 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E278CC422FD11D200B8B3E5 /* ErrorMessage.swift */; };
+		8E278CC822FD166900B8B3E5 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E278CC722FD166900B8B3E5 /* UIViewController+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8E278CA522FD024600B8B3E5 /* LocalAuthenSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalAuthenSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E278CA822FD024600B8B3E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8E278CAA22FD024600B8B3E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E278CAA22FD024600B8B3E5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8E278CAD22FD024600B8B3E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E278CAF22FD024800B8B3E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E278CB222FD024800B8B3E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E278CB422FD024800B8B3E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E278CBF22FD066400B8B3E5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8E278CC222FD0D4B00B8B3E5 /* LocalAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthentication.swift; sourceTree = "<group>"; };
+		8E278CC422FD11D200B8B3E5 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		8E278CC722FD166900B8B3E5 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,74 @@
 		8E278CA722FD024600B8B3E5 /* LocalAuthenSample */ = {
 			isa = PBXGroup;
 			children = (
-				8E278CA822FD024600B8B3E5 /* AppDelegate.swift */,
-				8E278CAA22FD024600B8B3E5 /* ViewController.swift */,
-				8E278CAC22FD024600B8B3E5 /* Main.storyboard */,
+				8E278CBA22FD05F400B8B3E5 /* App */,
+				8E278CC622FD165D00B8B3E5 /* Extensions */,
+				8E278CC122FD0D3800B8B3E5 /* Helper */,
+				8E278CBB22FD060700B8B3E5 /* Scenes */,
 				8E278CAF22FD024800B8B3E5 /* Assets.xcassets */,
 				8E278CB122FD024800B8B3E5 /* LaunchScreen.storyboard */,
 				8E278CB422FD024800B8B3E5 /* Info.plist */,
 			);
 			path = LocalAuthenSample;
+			sourceTree = "<group>";
+		};
+		8E278CBA22FD05F400B8B3E5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8E278CA822FD024600B8B3E5 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8E278CBB22FD060700B8B3E5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8E278CBE22FD065800B8B3E5 /* Login */,
+				8E278CBC22FD061000B8B3E5 /* Main */,
+				8E278CBD22FD063300B8B3E5 /* Storyboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8E278CBC22FD061000B8B3E5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8E278CAA22FD024600B8B3E5 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8E278CBD22FD063300B8B3E5 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8E278CAC22FD024600B8B3E5 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		8E278CBE22FD065800B8B3E5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8E278CBF22FD066400B8B3E5 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8E278CC122FD0D3800B8B3E5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8E278CC222FD0D4B00B8B3E5 /* LocalAuthentication.swift */,
+				8E278CC422FD11D200B8B3E5 /* ErrorMessage.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		8E278CC622FD165D00B8B3E5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8E278CC722FD166900B8B3E5 /* UIViewController+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +203,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E278CAB22FD024600B8B3E5 /* ViewController.swift in Sources */,
+				8E278CC022FD066400B8B3E5 /* LoginViewController.swift in Sources */,
+				8E278CAB22FD024600B8B3E5 /* MainViewController.swift in Sources */,
+				8E278CC822FD166900B8B3E5 /* UIViewController+.swift in Sources */,
+				8E278CC522FD11D200B8B3E5 /* ErrorMessage.swift in Sources */,
 				8E278CA922FD024600B8B3E5 /* AppDelegate.swift in Sources */,
+				8E278CC322FD0D4B00B8B3E5 /* LocalAuthentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
